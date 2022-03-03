@@ -1,0 +1,20 @@
+我使用的是win10系统。
+python版本的要求是3.5-3.7，我使用的是python3.7
+学习python最好需要有anaconda这个软件
+windows用户还需要安装vc++,可以从官网下载
+https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads
+
+安装完vc之后需要重启计算机
+
+CPU版本安装，GPU需要N卡支持
+
+安装CPU版本步骤：
+1）打开anaconda prompt命令行，创建虚拟环境conda create -n tf2 python=3.7，然后使用activate tf2进入环境
+2）升级pip版本，执行python -m pip install --upgrade pip. 使用pip -V如果现实版本大于19.0就不需要升级了
+3）然后在pip install tensorflow-cpu==2.3.0 -i https://pypi.douban.com/simple/ 就可以了
+
+是否安装成功：
+输入python，进入python环境
+import tensorflow as tf   不显示错误就是安装成功了
+
+之后在使用的过程中可能还需要安装别的包，可以都是用-i https://pypi.douban.com/simple/来进行加速安装
