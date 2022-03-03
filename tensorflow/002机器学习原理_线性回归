@@ -1,0 +1,14 @@
+在代码目录下创建一个dataset目录，将Income1.csv放入到该目录下
+链接：https://pan.baidu.com/s/1oAT_Pk-LRp1Nl1SbpzhdlQ 
+提取码：58wb
+这个文件我放到了百度网盘的分享链接里面了
+
+单变量线性回归算法： x代表学历,f(x)代表收入
+f(x) = ax + b  只要求出a,b来就可以，至于收入和学历的关系，可以从上面的csv表格中看出是大致呈现线性关系
+
+import pandas as pd
+data = pd.read_csv("./dataset/Income1.csv")
+print(data)
+上述代码读取csv中的数据，显示为如下图所示
+
+![image](https://github.com/CabbageEggplant/TensorflowLearning/blob/main/tensorflow/images/002_1.png)
